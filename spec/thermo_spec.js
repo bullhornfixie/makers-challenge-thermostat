@@ -15,6 +15,10 @@ describe('Thermo', function() {
 		expect(thermo.currentTemp()).toEqual(21)
 	});
 
+	it('decreases temperature when up function is called', function() { 
+		thermo.down()
+		expect(thermo.currentTemp()).toEqual(19)
+	})
 	
 });
 

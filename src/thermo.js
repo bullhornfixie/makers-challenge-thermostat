@@ -14,4 +14,8 @@ class Thermo {
     this.temperature ++;
   }
 
+  down() {
+    this.temperature --;
+  }
+
 }
