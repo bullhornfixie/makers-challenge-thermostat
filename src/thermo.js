@@ -12,8 +12,10 @@ class Thermo {
   }
 
   up() {
-    if (this.temperature === 25) {
-      throw("Maximum temperature reached")
+    if (this.temperature === 25 && this.powerSave) {
+      throw("Maximum temperature reached");
+    } else if (this.temperature === 32) {
+      throw("Maximum temperature reached");
     }
     else 
       this.temperature ++;

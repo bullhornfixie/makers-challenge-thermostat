@@ -35,6 +35,15 @@ describe('Thermo', function() {
 		}
 		expect(function() { thermo.up();}).toThrow("Maximum temperature reached")
 	})
+
+	it("sets the maximum temperature to 32 degrees when power saving mode is off", function(){
+		thermo.powerSave = false;
+		for (var i = 0; i < 12; i++){
+			thermo.up()
+			console.log(thermo.currentTemp())
+		}
+		expect(function() { thermo.up();}).toThrow("Maximum temperature reached")
+	});
 	
 });
 
