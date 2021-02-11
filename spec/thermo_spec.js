@@ -19,6 +19,14 @@ describe('Thermo', function() {
 		thermo.down()
 		expect(thermo.currentTemp()).toEqual(19)
 	})
+
+	it("checks that temperature can't be lower than 10 degrees", function() {
+		for (var i = 0; i < 10; i++){
+			thermo.down()
+			console.log(thermo.currentTemp())
+		}
+		expect(function() { thermo.down();}).toThrow("Minimum temperature reached")
+	});
 	
 });
 
