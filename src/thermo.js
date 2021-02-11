@@ -4,6 +4,7 @@ class Thermo {
 
   constructor(){
     this.temperature = 20
+    this.powerSave = true 
   };
 
   currentTemp() {
@@ -11,7 +12,11 @@ class Thermo {
   }
 
   up() {
-    this.temperature ++;
+    if (this.temperature === 25) {
+      throw("Maximum temperature reached")
+    }
+    else 
+      this.temperature ++;
   }
 
   down() {
@@ -21,6 +26,10 @@ class Thermo {
     else {
       throw("Minimum temperature reached")
     }
+  }
+  
+  isPowerSaver() {
+    return this.powerSave 
   }
 
 }
