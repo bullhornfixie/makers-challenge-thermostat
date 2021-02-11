@@ -44,6 +44,11 @@ describe('Thermo', function() {
 		}
 		expect(function() { thermo.up();}).toThrow("Maximum temperature reached")
 	});
+
+	it("turns off powersaving mode", function() {
+		thermo.switch() 
+		expect(thermo.isPowerSaver()).toBe(false)
+	})
 	
 });
 

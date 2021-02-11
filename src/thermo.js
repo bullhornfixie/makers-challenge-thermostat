@@ -34,4 +34,8 @@ class Thermo {
     return this.powerSave 
   }
 
+  switch() {
+    this.powerSave = false
+  }
+
 }
