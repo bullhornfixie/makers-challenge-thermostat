@@ -5,7 +5,6 @@ class Thermo {
   constructor(){
     this.temperature = 20
     this.powerSave = true 
-    this.energyUsage = 0
   };
 
   currentTemp() {
@@ -48,12 +47,15 @@ class Thermo {
   }
 
   energyEfficiency() {
-    if (this.energyUsage < 18)
+    if(this.temperature < 18) {
       return 'low-usage'
-    else if (this.energyUsage <= 25)
+    }
+    else if(this.temperature <= 25) {
       return 'medium-usage'
-    else
+    }
+    else {
       return 'high-usage'
+    }
   }
 
 }
