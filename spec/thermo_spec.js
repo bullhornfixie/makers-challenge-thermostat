@@ -13,7 +13,7 @@ describe('Thermo', function() {
 	it('increases temperatue when up function is called', function() {
 		thermo.up()
 		expect(thermo.currentTemp()).toEqual(21)
-	});
+	})
 
 	it('decreases temperature when up function is called', function() { 
 		thermo.down()
@@ -26,7 +26,7 @@ describe('Thermo', function() {
 			console.log(thermo.currentTemp())
 		}
 		expect(function() { thermo.down();}).toThrow("Minimum temperature reached")
-	});
+	})
 
 	it("sets the maximum temperature to 25 degrees when power saving mode is on", function() {
 		for (var i = 0; i < 5; i++){
@@ -43,7 +43,7 @@ describe('Thermo', function() {
 			console.log(thermo.currentTemp())
 		}
 		expect(function() { thermo.up();}).toThrow("Maximum temperature reached")
-	});
+	})
 
 	it("turns off powersaving mode", function() {
 		thermo.switch()
@@ -61,7 +61,14 @@ describe('Thermo', function() {
 		thermo.up()
 		thermo.reset()
 		expect(thermo.currentTemp()).toEqual(20)
-	});
+	})
+
+	it("checks the thermostats energy usage", function() { 
+    thermo.energyUsage = 5
+		expect(thermo.energyEfficiency()).toBe('low-usage')
+	})
+
+
 
 });
 
