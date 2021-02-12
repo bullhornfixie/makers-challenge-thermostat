@@ -57,5 +57,11 @@ describe('Thermo', function() {
 		expect(thermo.isPowerSaver()).toBe(true)
 	})
 
+	it("resets thermostat temperature to 20 degrees", function() {
+		thermo.up()
+		thermo.reset()
+		expect(thermo.currentTemp()).toEqual(20)
+	});
+
 });
 

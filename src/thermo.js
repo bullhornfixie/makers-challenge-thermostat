@@ -42,4 +42,8 @@ class Thermo {
       this.powerSave = true 
   }
 
+  reset() {
+    this.temperature = 20
+  }
+
 }
