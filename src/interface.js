@@ -17,4 +17,20 @@ $(document).ready(function() {
     thermostat.down();
     updateTemperature()
   })
+
+  $('#temperature-reset').click(function() {
+    thermostat.reset();
+    updateTemperature()
+  })
+
+  $('#powersaving-off').click(function() { 
+    thermostat.switch()
+    $('#power-saving-status').text('off')
+  })
+
+$('#powersaving-on').click(function() {
+  thermostat.switch()
+  $('#power-saving-status').text('on')
+})
+
 })
