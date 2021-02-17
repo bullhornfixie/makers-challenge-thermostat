@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <!-- 
+  <head> element is a container for metadata (data about data) and is placed outside of the <body> tag 
+  <body> element contains all the contents of an HTML document, such as headings <h1> paragraphs <p> 
+  <script> contains scripting statements or points to an external script file through the src attribute 
+  src specifies the URL of an external script file 
+  In HTML the computer can interpret raw text that is wrapped in HTML elements
+  -->
+
+<html>
+  <head>
+    <title>Thermostat</title>
+    <link rel="stylesheet" href="public/css/stylesheet2.css" />
+  </head>
+
+
+  <body>
+    <div class="unit">
+      <div class="screen">
+
+        <p><span id="temperature"></span></p>
+        <button id="temperature-down">-</button>
+        <button id="temperature-up">+</button>
+
+      </div>
+    </div>
+  
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="src/thermo.js"></script>
+   <script src="jquery_interface.js"></script>
+
+  </body>
+</html>

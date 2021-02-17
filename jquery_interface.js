@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-let thermostat = new Thermo();
+  let thermostat = new Thermo();
 
 function updateTemperature() {
   $('#temperature').text(thermostat.temperature);
@@ -34,6 +33,11 @@ thermostat.switch()
 $('#power-saving-status').text('on')
 })
 
+
+/* 
+
+Additional feature which grabs current temperature from weather API.
+
 displayWeather('London');
 
 $('#select-city').submit(function(event) {
@@ -51,5 +55,6 @@ function displayWeather(city) {
   })
 }
 
+*/
 
 })
