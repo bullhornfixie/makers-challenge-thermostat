@@ -1,0 +1,1 @@
+## Week 6 Thermostat Project in JavaScript 
