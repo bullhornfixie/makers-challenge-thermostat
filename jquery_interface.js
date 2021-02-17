@@ -33,6 +33,7 @@ thermostat.switch()
 $('#power-saving-status').text('on')
 })
 
+})
 
 /* 
 
@@ -56,5 +57,3 @@ function displayWeather(city) {
 }
 
 */
-
-})
