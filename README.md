@@ -10,7 +10,7 @@
 - [x] If power saving mode is off, the maximum temperature is 32 degrees
 - [x] Power saving mode is on by default
 - [x] You can reset the temperature to 20 with a reset function
-- [ ] Query the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage.
+- [ ] Query the thermostat's current energy usage: < 18 is low, <= 25 is medium, > 25 high-usage.
 
 ### Screenshot 
 ![Alt text](/screenshot.png?raw=true)
