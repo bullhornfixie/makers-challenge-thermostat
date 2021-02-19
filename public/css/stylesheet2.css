@@ -1,18 +1,17 @@
-/* 
 
-Hexadecimal colours are supported in all browsers. It is specified with #RRGGBB 
-
-@font-face rule is supported in most browsers
-font-family defines the name of the font 
-src defines where the font should be downloaded from 
-TTF file is a font file format created by Apple 
-
-*/
+/* Hexadecimal colours are supported in all browsers. It is specified with #RRGGBB */
 
 @font-face {
   font-family: 'digital-clock-font';
   src: url('alarm_clock.ttf');
 }
+
+/*
+@font-face rule is supported in most browsers
+font-family defines the name of the font 
+src defines where the font should be downloaded from 
+TTF file is a font file format created by Apple 
+*/
 
 body {
   background-color: white;
@@ -32,11 +31,27 @@ body {
 .screen {
   border: 5px solid black;
   border-radius: 20px;
-  margin: 25px;
-  padding: 10px;
+  margin: 20px;
+  padding: 5px;
   height: 400px;
   background-color: #2f2f31;
   font-family: 'digital-clock-font';
-  font-size: 30pt;
+  font-size: 40pt;
   color: white;
+  transition: background-color 0.5s ease-in;
+}
+
+.screen.eco-on {
+  background-color: #ffa500;
+}
+
+.button {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 7px;
+  margin-right: 7px;
+  background-color: #d7d7d7;
+  box-shadow: 0px 5px 5px 0px;
 }
