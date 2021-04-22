@@ -1,16 +1,9 @@
-## Thermostat 
-### Week 6 project in Javascript for Makers LDN
+## Mock API 
 
-### Spec
-- [x] Thermostat starts at 20 degrees
-- [x] You can increase the temperature with an up function
-- [x] You can decrease the temperature with a down function
-- [x] The minimum temperature is 10 degrees
-- [x] If power saving mode is on, the maximum temperature is 25 degrees
-- [x] If power saving mode is off, the maximum temperature is 32 degrees
-- [x] Power saving mode is on by default
-- [x] You can reset the temperature to 20 with a reset function
-- [ ] Query the thermostat's current energy usage: < 18 is low, <= 25 is medium, > 25 high-usage.
+### Extracting and manipulating data from a local JSON file
+For a proposed project I required swell data from MagicSeaweed via their API. However, this is now closed to new applications and in lieu MSW provided 4 JSON files with swell data of 4 major surf spots in Cornwall, Hawaii, Gold Coast and California. 
 
-### Screenshot 
-![Alt text](/screenshot.png?raw=true)
+This is a testing area which enabled me to extract data from the local JSON files and manipulate the data.
+
+
+# mock-api-
